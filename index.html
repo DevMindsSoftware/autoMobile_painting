@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive_web</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    
+    <link rel="stylesheet" href="./bootstrap_5_bundle/css/bootstrap.min.css">
+    <script src="./bootstrap_5_bundle/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./automotive_web.css">
+
+    <link rel="stylesheet" href="./automotive_painting/aos_libarary/css/aos.css">
+
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.css" /> -->
+
+</head>
+<body>
+  <div class="devminds_loader_container">
+    <div class="devminds_loading_text">
+        <span>L</span>
+        <span>O</span>
+        <span>A</span>
+        <span>D</span>
+        <span>I</span>
+        <span>N</span>
+        <span>G</span>
+    </div>
+</div>
+   <!-- *********************************** Header Section Start *********************************** -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light position-sticky top-0" style="z-index: 5;">
+    <div class="container-fluid px-3">
+      <a class="navbar-brand" href="#"><img src="./automotive_painting/car_logo.png" alt="" srcset="" width="120"></a>
+      <button class="navbar-toggler p-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav gap-lg-4 mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Home Delivery</a></li>
+              <li><a class="dropdown-item" href="#">Choosing Colours</a></li>
+              <li><a class="dropdown-item" href="#">12 Hours</a></li>
+              <li><a class="dropdown-item" href="#">Call Any Time</a></li>
+              <li><a class="dropdown-item" href="#">Bike Services</a></li>
+
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="img_gallery.html">Gallery</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="feedback.html">Customer Support</a>
+          </li>
+                  
+          <li class="nav-item">
+            <a class="nav-link" href="about_us.html">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact_us.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+   <!-- *********************************** Header Section End *********************************** -->
+
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner d-flex">
+        <div class="carousel-item active">
+          <img src="./automotive_painting/automotive_banner_1.jpeg" class="d-block w-100 devminds_slider_img">
+          <div class="carousel-caption d-none d-md-block">
+            <h4 data-aos="fade-right">AUTOMOTIVE PAINT PROCESS SIMULATIONS</h4>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./automotive_painting/automotive_banner_2.jpeg" class="d-block w-100 devminds_slider_img">
+          <div class="carousel-caption d-none d-md-block">
+            <h4 data-aos="fade-right">AUTOMOTIVE PAINT PROCESS SIMULATIONS</h4>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./automotive_painting/automotive_banner_3.jpeg" class="d-block w-100 devminds_slider_img">
+          <div class="carousel-caption d-none d-md-block">
+            <h4 data-aos="fade-right">AUTOMOTIVE PAINT PROCESS SIMULATIONS</h4>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+
+  <div class="container-fluid about_section">
+    <h1 class="text-center my-5 devminds_heading"><span class="devminds_section_header" data-aos="fade-right">About Us</span></h1>
+    <div class="container py-4">
+      <div class="row my-3">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 d-flex flex-wrap gap-5 devminds_about_imgs" data-aos="fade-up">
+          <div class="devminds_img_card shadow">
+            <img src="./automotive_painting/services_3.jpg" class="w-100" alt="">
+            <p class="devminds_img_card_txt mx-auto mt-2"><span>Car Painting</span></p>
+          </div>
+          <div class="devminds_img_card shadow">
+            <img src="./automotive_painting/services_3.jpg" class="w-100" alt="">
+            <p class="devminds_img_card_txt mx-auto mt-2"><span>Car Painting</span></p>
+          </div>
+          <div class="devminds_img_card shadow">
+            <img src="./automotive_painting/services_3.jpg" class="w-100" alt="">
+            <p class="devminds_img_card_txt mx-auto mt-2"><span>Car Painting</span></p>
+          </div>
+          <div class="devminds_img_card shadow">
+            <img src="./automotive_painting/services_3.jpg" class="w-100" alt="">
+            <p class="devminds_img_card_txt mx-auto mt-2"><span>Car Painting</span></p>
+          </div>
+          <div class="devminds_img_card shadow devminds_about_img5">
+            <img src="./automotive_painting/services_3.jpg" class="w-100" alt="">
+            <p class="devminds_img_card_txt mx-auto mt-2"><span>Car Painting</span></p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 mt-5 mt-sm-5 mt-md-3 mt-lg-0" data-aos="fade-down">
+          <p class="text-center h4 my-2">To be the first-class destination for second-hand cars!</p>
+          <p class="h6 lh-lg">Founded in 2015, CARS24 is a leading AutoTech company streamlining and revolutionising the sale, purchase, and financing of pre-owned cars in India, Australia, Thailand, and UAE. Leveraging a Smart AI Pricing Engine, and 140 quality checks, selling and buying pre-owned vehicles is seamless and transparent with CARS24. </p>
+
+          <p class="h6 lh-lg my-2">Ensuring complete transparency and faster lending processes, CARS24 Financial Services Private Limited, a professionally managed Non-Banking Financial Company (NBFC) registered with the Reserve Bank of India, offers customers focused value added services. </p>
+
+          <p class="h6 lh-lg my-2"> If you’re in the market for a pre-owned car, the process can be daunting. Finding the car, talking to the owner, negotiating, examining its condition, final purchase, RC Transfer, money transfer… that’s a lot for you to go through, especially in a market that’s quite scattered.</p>
+
+          <p class="h6 lh-lg my-2"> CARS24 has brought together cutting-edge technology and country-wide partners to solve all the problems associated with selling an existing car, or purchasing a pre-loved one. Our team of dedicated in-house researchers work tirelessly to understand what our customers desire and create a delightful buying or selling experience for them. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid devminds_work_section pt-5 pb-3">
+    <h1 class="text-center devminds_heading"><span class="devminds_section_header" data-aos="fade-right">Services</span></h1>
+    <p class="text-center">The service history of a car refers to the record of all the maintenance and repair work that has been performed on the vehicle throughout its life.</p>
+
+    <div class="container my-5" data-aos="fade-up">
+      <div class="card-slider">
+        <div class="col-lg-12">
+          <div class="card w-100">
+            <img class="card-img-top" src="./automotive_painting/services_2.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Home Delivery</h5>
+              <p class="card-text devminds_services_txt">You can easily book a PDI for a used car to assess its condition and identify any existing issues before purchase.</p>
+              <a href="#" class="devminds_btn_read">Read More...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="card">
+            <img class="card-img-top" src="./automotive_painting/services_1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Choosing Colours</h5>
+              <p class="card-text devminds_services_txt"> The pigment is responsible for providing that luxurious color of the paint.</p>
+              <a href="#" class="devminds_btn_read">Read More...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="card w-100">
+            <img class="card-img-top img-fluid" src="./automotive_painting/services_3.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">12 Hours</h5>
+              <p class="card-text devminds_services_txt">My customers are very happy with the CARS24 Service History report since it gives them the vehicle details easily.</p>
+              <a href="#" class="devminds_btn_read">Read More...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="card w-100">
+            <img class="card-img-top" src="./automotive_painting/services_4.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Call Any Time</h5>
+              <p class="card-text devminds_services_txt">Get a clear and informative report sent directly to your phone after the inspection.</p>
+              <a href="#" class="devminds_btn_read">Read More...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="card w-100">
+            <img class="card-img-top" src="./automotive_painting/services_6.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Bike Services</h5>
+              <p class="card-text devminds_services_txt">The transparent coating is added to the base coat after the painting process. The clear coating is also crucial as, after this stage, the car comes in direct contact with the outside, and the clear coat should be able to resist abrasion and withstand UV light. </p>
+              <a href="#" class="devminds_btn_read">Read More...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid my-4">
+    <h1 class="text-center devminds_heading" data-aos="fade-right" data-aos-duration="1000"><span class="devminds_section_header">Image gallery</span></h1>
+    <p class="text-center h6 w-50 mx-auto devminds_img_galleryTxt">The automotive paint adds "bling" to the car and makes it a shiny-new looking car. At the same time, the thinner is used to make sure the consistency of the paint is even, and the binder, as the name suggests, binds the pigment and the thinner together to ensure the long life of the car paint.</p>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mb-4">
+          <a href="./automotive_painting/services_5.jpg" data-fancybox="gallery">
+            <img src="./automotive_painting/services_5.jpg" class="devminds_gallery_img" data-aos="fade-up" data-aos-duration="1000">
+          </a>
+        </div>
+       
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mb-4">
+          <a href="./automotive_painting/automotive_banner_1.jpeg" data-fancybox="gallery">
+            <img src="./automotive_painting/automotive_banner_1.jpeg" class="devminds_gallery_img" data-aos="fade-up" data-aos-duration="1000">
+          </a>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mb-4">
+          <a href="./automotive_painting/services_1.jpg" data-fancybox="gallery">
+            <img src="./automotive_painting/services_1.jpg" class="devminds_gallery_img" data-aos="fade-up" data-aos-duration="1000">
+          </a>
+        </div>
+  
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mb-4">
+          <a href="./automotive_painting/automotive_banner_2.jpeg" data-fancybox="gallery">
+            <img src="./automotive_painting/automotive_banner_2.jpeg" class="devminds_gallery_img" data-aos="fade-up" data-aos-duration="1000">
+          </a>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mb-4">
+          <a href="./automotive_painting/services_2.jpeg" data-fancybox="gallery">
+            <img src="./automotive_painting/services_2.jpeg" class="devminds_gallery_img" data-aos="fade-up" data-aos-duration="1000">
+          </a>
+        </div>
+                
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mb-4">
+          <a href="./automotive_painting/services_3.jpg" data-fancybox="gallery">
+            <img src="./automotive_painting/services_3.jpg" class="devminds_gallery_img" data-aos="fade-up" data-aos-duration="1000">
+          </a>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mb-4">
+          <a href="./automotive_painting/services_4.jpg" data-fancybox="gallery">
+            <img src="./automotive_painting/services_4.jpg" class="devminds_gallery_img" data-aos="fade-up" data-aos-duration="1000">
+          </a>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mb-4">
+          <a href="./automotive_painting/services_7.jpg" data-fancybox="gallery">
+            <img src="./automotive_painting/services_7.jpg" class="devminds_gallery_img" data-aos="fade-up" data-aos-duration="1000">
+          </a>
+        </div>
+      </div>  
+    </div>
+  </div>
+
+  <div class="container-fluid devminds_work_section py-5">
+    <h1 class="text-center devminds_heading" data-aos="fade-right" data-aos-duration="1000"><span class="devminds_section_header">Our Blogs</span></h1>
+    <p class="text-center h6 w-50 mx-auto">Naturally, there will be many different compounds that are used to make the automotive paint different from all other variables. We can segregate the entire automotive paints' composition into three main categories that are, pigment, thinner, and binder. Each carries a different and crucial role from one another.</p>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5" data-aos="fade-down" data-aos-duration="1000">
+          <div class="devminds_blog ">
+            <a href="#">
+              <img src="./automotive_painting/services_7.jpg" class="full-width devminds_blog_img" alt="How FGM violates">
+            </a>
+          </div>
+          <div class="devminds_blog_meta bg-white p-relative">
+            <div class="">
+              <div class="text-white">
+                <h3 class="devminds_blog_date text-white m-0">11, May 2024</h3>
+              </div>
+            </div>
+            <div class="blog_author m-3">
+              <a class="text-dark mx-1 text-decoration-none" href="#">
+                <span class="text-blue"> <i class="fas fa-user" style="color: #fd6721;"></i> </span>Jason Roy
+              </a>
+            </div>
+            <div class="blog_devminds_heading">
+              <h4>How FGM violates </h4>
+              <p class="text-muted h6 my-3 lh-lg devminds_blog_txt">Got a PDI done by CARS24 before buying my car. The expert found some issues I didn't even know about. The detailed report helped me make the right decision.</p>
+              <a class="devminds_btn_read" href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5" data-aos="fade-up" data-aos-duration="1000">
+          <div class="devminds_blog ">
+            <a href="#">
+              <img src="./automotive_painting/services_7.jpg" class="full-width devminds_blog_img" alt="How FGM violates">
+            </a>
+          </div>
+        <div class="devminds_blog_meta bg-white p-relative">
+          <div class="">
+            <div class="text-white">
+              <h3 class="devminds_blog_date text-white m-0">11, May 2024</h3>
+            </div>
+          </div>
+          <div class="blog_author m-3">
+            <a class="text-dark mx-1 text-decoration-none" href="#">
+              <span class="text-blue"> <i class="fas fa-user" style="color: #fd6721;"></i> </span>Jason Roy
+            </a>
+          </div>
+          <div class="blog_devminds_heading">
+            <h4>How FGM violates </h4>
+            <p class="text-muted h6 my-3 lh-lg devminds_blog_txt">The very important, automotive paint is different from any other generic paint. It is made to last the entire life of the car.</p>
+            <a class="devminds_btn_read" href="#">Read More</a>
+          </div>
+        </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5" data-aos="fade-down" data-aos-duration="1000">
+          <div class="devminds_blog ">
+            <a href="#">
+              <img src="./automotive_painting/services_7.jpg" class="full-width devminds_blog_img" alt="How FGM violates">
+            </a>
+          </div>
+          <div class="devminds_blog_meta bg-white p-relative">
+            <div class="">
+              <div class="text-white">
+                <h3 class="devminds_blog_date text-white m-0">11, May 2024</h3>
+              </div>
+            </div>
+            <div class="blog_author m-3">
+              <a class="text-dark mx-1 text-decoration-none" href="#">
+                <span class="text-blue"> <i class="fas fa-user" style="color: #fd6721;"></i> </span>Jason Roy
+              </a>
+            </div>
+            <div class="blog_devminds_heading">
+              <h4>How FGM violates </h4>
+              <p class="text-muted h6 my-3 lh-lg devminds_blog_txt">Car truth's PDI helped uncover hidden issues in the car I wanted to buy. Ended up saving a ton of cash in the long run. Can't put a price on peace of mind!...</p>
+              <a class="devminds_btn_read" href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ********************************* Footer Section Start **************************************** -->
+  <div class="container-fluid bg-dark text-white">
+    <div class="row p-5 pb-3">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-3 text-center">
+          <h3 data-aos="fade-right" data-aos-duration="1000">About Us</h3>
+          <ul class="devminds_footer_font18 p-2 list-unstyled row" data-aos="fade-up" data-aos-duration="1000">
+            <li class="d-flex gap-5">
+              <i class="fas fa-map-marker-alt mt-2" style="font-size: 30px;"></i>
+                <address  class="text-start">
+                  <span><strong>Address :</strong> <br>
+                  578 'E' Ward, shahupuri 1st Lane, Manoj plaza, kolhapur.</span>
+                </address>
+            </li>
+            <li class="d-flex gap-5">
+              <i class="far fa-envelope mt-2" style="font-size: 24px;"></i>
+              <address class="text-start">
+                <span><strong>Have any questions :</strong><br><a class="text-decoration-none text-white d-block" href="#">devmindsdeveloper@gmail.com</a></span>
+              </address>
+            </li>
+            <li class="d-flex gap-5">
+              <i class="fas fa-phone-volume mt-2" style="font-size: 24px;"></i>
+              <address class="text-start">
+                <span><strong>Phone No. :</strong><br><a class="text-decoration-none text-white d-block" href="#">(+91)-9529146598</a></span>
+              </address>
+            </li>
+          </ul>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-3 ">
+        <h3 data-aos="fade-right" data-aos-duration="1000" class="text-center">Our Services</h3>
+            <ul class="list-unstyled p-0 devminds_footer_font18 d-flex flex-column ps-5" data-aos="fade-up" data-aos-duration="1000">
+              <li class="pb-3 ms-4 text-start">Home Delivery</li>
+              <li class="pb-3 ms-4 text-start">Choosing Colours</li>
+              <li class="pb-3 ms-4 text-start">12 Hours</li>
+              <li class="pb-3 ms-4 text-start">Call Any Time</li>
+              <li class="pb-3 ms-4 text-start">Bike Service</li>
+            </ul>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+        <h3 data-aos="fade-right" data-aos-duration="1000" class="text-center">Latest Updates</h3>
+        <ul class="list-unstyled" data-aos="fade-up" data-aos-duration="1000">
+          <li class="d-flex align-items-center mb-2">
+            <div class="devminds_footer_updates"><span>12</span><br><strong>MAY</strong></div>
+            <div class="devminds_foot_updates_contents">
+              <a class="text-decoration-none text-white text-start" href="#">How FGM violates</a>
+            </div>
+          </li>
+            <li class="d-flex align-items-center mb-2">
+              <div class="devminds_footer_updates">
+                <span>12</span><br><strong>MAY</strong>
+              </div>
+              <div class="devminds_foot_updates_contents">
+                <a class="text-decoration-none text-white text-start" href="#">Bike Services</a>
+              </div>
+            </li>
+            <li class="d-flex align-items-center mb-2">
+              <div class="devminds_footer_updates">
+                <span>12</span><br><strong>MAY</strong>
+              </div>
+              <div class="devminds_foot_updates_contents">
+                <a class="text-decoration-none text-white text-start" href="#">Inside Andalusia gems</a>
+              </div>
+            </li>
+          </ul>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-3 text-center mb-5">
+        <h3 data-aos="fade-right" data-aos-duration="1000">Connect With Us</h3>
+        <ul class="d-flex devminds_media_icons justify-content-center" data-aos="fade-up" data-aos-duration="1000">
+          <li class="devminds_footer_social_media">
+            <a class="text-white" href="#">
+              <!-- <i class="fab fa-facebook-f"></i> -->
+              <img src="./automotive_painting/facebook_icon.png" alt="" height="30px" width="30px">
+            </a>
+          </li>
+          <li class="devminds_footer_social_media">
+            <a class="text-white" href="#">
+              <!-- <i class="fab fa-twitter"></i> -->
+              <img src="./automotive_painting/twitter_icon.png" alt="" height="30px" width="30px">
+            </a>
+          </li>
+          <li class="devminds_footer_social_media">
+            <a class="text-white" href="#">
+              <!-- <i class="fab fa-instagram"></i> -->
+              <img src="./automotive_painting/youtube_icon.png" alt="" height="30px" width="30px">
+            </a>
+          </li>
+          <li class="devminds_footer_social_media">
+            <a class="text-white" href="#">
+              <!-- <i class="fab fa-linkedin"></i> -->
+              <img src="./automotive_painting/telegram_icon.png" alt="" height="30px" width="30px">
+            </a>
+          </li>
+          <li class="devminds_footer_social_media">
+            <a class="text-white" href="#">
+              <!-- <i class="fab fa-pinterest-square"></i> -->
+              <img src="./automotive_painting/linkedin_icon.png" alt="" height="30px" width="30px">
+            </a>
+          </li>
+          <!-- <li class="devminds_footer_social_media">
+            <a class="text-white" href="#"><i class="fab fa-google-plus"></i></a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid devminds_copyright_wrap">
+    <div class="">
+      <div class="container text-center">
+        <p class="text-white m-0">
+          Copyright © 2024 -  <a href="#" class="text-decoration-none text-white">Devminds Software</a>, Kolhapur.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- ********************************* Footer Section End **************************************** -->
+
+
+  <script src="./automotive_painting/aos_libarary/js/aos.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.js"></script> -->
+  <script>
+      // AOS.init();
+      $(function () {
+        AOS.init({
+          duration: 1200
+        });
+
+        $(".js-load-more").on("click", function () {
+          var $content = $(this).next(".js-more-content");
+
+          $content.animate(
+            {
+              height: 750
+            },
+            500
+          );
+        });
+
+        onElementHeightChange(document.body, function () {
+          AOS.refresh();
+        });
+      });
+
+      function onElementHeightChange(elm, callback) {
+        var lastHeight = elm.clientHeight;
+        var newHeight;
+
+        (function run() {
+          newHeight = elm.clientHeight;
+          if (lastHeight !== newHeight) callback();
+          lastHeight = newHeight;
+
+          if (elm.onElementHeightChangeTimer) {
+            clearTimeout(elm.onElementHeightChangeTimer);
+          }
+
+          elm.onElementHeightChangeTimer = setTimeout(run, 200);
+        })();
+      }
+   
+  </script>
+
+  <script>
+            
+    $(document).ready(function($) {
+        $('.card-slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrows: true,
+            responsive: [{
+            breakpoint: 770,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+            {
+            breakpoint: 425,
+            settings: {
+                arrows: false,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            }]
+        });
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script>
+  Fancybox.bind('[data-fancybox="gallery"]', {
+    //
+  });    
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+      setTimeout(function () {
+          $('.devminds_loader_container').hide();
+      }, 2000);
+  });
+</script>
+
+</body>
+</html>
